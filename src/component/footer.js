@@ -3,7 +3,7 @@ import {Navbar, Col, Form, FormControl,FormGroup} from 'react-bootstrap'
 import style from '../style/footer.js'
 export default ()=>{
 	return (
-		<Navbar fixedBottom  style={style.footerCommon} fluid>
+		<Navbar style={style.footerCommon}>
 			<Col sm={4} style={style.media.common}>
 				<h4 style={style.media.text}>Trax</h4>
 				<i style={style.media.icon} class="fa fa-instagram" aria-hidden="true"></i>

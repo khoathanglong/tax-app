@@ -9,7 +9,7 @@ export default ()=>{
 		<div style={style.header.hamburger}></div>
 	</div>
 	return ( //bsStyle="" and add custom Style
-		<Navbar fixTop bsStyle="" style={style.commonStyle} fluid>
+		<Navbar fixTop bsStyle="" style={style.commonStyle} >
 			<Row>
 				<Col xs={6} sm={4} style={style.header.logo}>
 					<Image src={logo} alt="logo" width="60px"/>

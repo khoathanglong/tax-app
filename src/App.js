@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import Header from './headerAndFooter/header.js';
-import Footer from './headerAndFooter/footer.js'
+import {Grid} from 'react-bootstrap';
 
+import Header from './component/header.js';
+import Footer from './component/footer.js';
+import TaxNews from './component/taxNews.js';
+import HomePage from './component/home.js'
 
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{fontFamily:'Questrial'}}> 
+      <Grid className="App" style={{fontFamily:'Questrial'}} fluid > 
         <Header/>
+        <HomePage/>
         <Footer/>
-      </div>
+      </Grid>
     );
   }
 }

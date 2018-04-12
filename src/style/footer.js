@@ -1,7 +1,9 @@
 export default {
 	footerCommon:{
 		background: '-webkit-linear-gradient(#4E0250 0%, #645986 71.5%, #58BC82 100% )',
-		color:'white'
+		color:'white',
+		margin:'0',
+		borderRadius:'0px'
 	},
 	media:{
 		text:{
