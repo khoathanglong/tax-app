@@ -4,14 +4,15 @@ import {Grid} from 'react-bootstrap';
 import Header from './component/header.js';
 import Footer from './component/footer.js';
 import TaxNews from './component/taxNews.js';
-import HomePage from './component/home.js'
+import HomePage from './component/home.js';
+import UserProfile from './component/profile.js';
 
 class App extends Component {
   render() {
     return (
-      <Grid className="App" style={{fontFamily:'Questrial'}} fluid > 
+      <Grid className="App" style={{fontFamily:'Questrial'}} fluid >
         <Header/>
-        <HomePage/>
+        <UserProfile/>
         <Footer/>
       </Grid>
     );
