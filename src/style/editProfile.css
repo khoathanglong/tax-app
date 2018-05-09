@@ -1,0 +1,11 @@
+#edit-profile-tabs a {
+  color: #4e0250;
+}
+
+#edit-profile-tabs .active a {
+  font-weight: bold;
+}
+
+th, td {
+  text-align: center;
+}

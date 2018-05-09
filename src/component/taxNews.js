@@ -3,8 +3,8 @@ import {Col, Row, Grid,Image} from 'react-bootstrap';
 import Image3 from '../image/news/employee.jpeg';
 import Image2 from '../image/news/tax.jpg';
 import Image1 from '../image/news/travel.jpeg';
-
 import style from '../style/news.js';
+
 export default ()=>{
 	return (
 		<Grid style={style.common}>

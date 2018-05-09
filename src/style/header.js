@@ -1,6 +1,7 @@
 export default {
 	commonStyle:{
 		fontFamily:"Questrial",
+		marginTop: '10px'
 	},
 	header:{
 		mainText:{
@@ -14,21 +15,21 @@ export default {
 		},
 		logo:{
 			display:'flex',
-			justifyContent:'center'
+			justifyContent:'left'
 		},
 		hamburger:{
 			backgroundColor:'#4E0250',
 			width:'49px',
 			height:'8px',
-			margin:'5px auto',
+			margin:'5px auto'
 		},
 		menuBar:{
 			color:'#4E0250',
 			fontSize:'48px',
 			backgroundColor:'white',
 			display:'flex',
-			justifyContent:'center'
-
+			justifyContent:'right',
+			paddingRight: '40px'
 		}
 	}
 }

@@ -9,26 +9,26 @@ export default ()=>{
 		<div style={style.header.hamburger}></div>
 	</div>
 	return ( //bsStyle="" and add custom Style
-		<Navbar fixTop bsStyle="" style={style.commonStyle} >
+		<Navbar fixTop bsStyle="" style={style.commonStyle} fluid>
 			<Row>
-				<Col xs={6} sm={4} style={style.header.logo}>
-					<Image src={logo} alt="logo" width="60px"/>
+				<Col xs={6} sm={2} style={style.header.logo}>
+					<a href='#'><Image src={logo} alt="logo" height="70px" style={{paddingLeft:'40px'}} /></a>
 				</Col>
-				<Col sm={4} xsHidden  style={style.header.mainText}>
+				<Col sm={8} xsHidden style={style.header.mainText}>
 					<span>
 						TRAX
 					</span>
 				</Col>
-				<Col xs={6} sm={4} style={style.header.menuBar}> 
-					<DropdownButton eventKey={3} 
-					    noCaret 
-					    title={hamburger} 
+				<Col xs={6} sm={2} style={style.header.menuBar}>
+					<DropdownButton eventKey={3} pullRight
+					    noCaret
+					    title={hamburger}
 					    id="basic-nav-dropdown"
 					    bsStyle=""
 					    style={{backgroundColor:'white'}}
 					>
 				        <MenuItem eventKey={3.1}>Sign up/Log in</MenuItem>
-				        <MenuItem divider />	
+				        <MenuItem divider />
 				        <MenuItem eventKey={3.2}>FAQs</MenuItem>
 				        <MenuItem divider />
 				        <MenuItem eventKey={3.3}>News</MenuItem>

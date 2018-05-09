@@ -5,14 +5,14 @@ import Header from './component/header.js';
 import Footer from './component/footer.js';
 import TaxNews from './component/taxNews.js';
 import HomePage from './component/home.js';
-import UserProfile from './component/profile.js';
+import EditProfile from './component/editProfile.js';
 
 class App extends Component {
   render() {
     return (
       <Grid className="App" style={{fontFamily:'Questrial'}} fluid >
         <Header/>
-        <UserProfile/>
+        <EditProfile/>
         <Footer/>
       </Grid>
     );

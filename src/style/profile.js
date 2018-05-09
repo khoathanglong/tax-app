@@ -55,6 +55,6 @@ export default {
     borderRadius: "12px",
     marginTop: "10px",
     marginBottom: "20px",
-    marginLeft: "5%"
+    marginLeft: "20px"
   }
 }

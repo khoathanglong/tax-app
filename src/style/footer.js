@@ -20,6 +20,7 @@ export default {
 	news:{
 		text:{
 			fontSize:'17px',
+			marginTop: '20px'
 		},
 	},
 	form:{
@@ -31,7 +32,8 @@ export default {
 		},
 		text:{
 			fontSize:'17px',
-			paddingLeft:'15px'
+			paddingLeft:'15px',
+			marginTop: '20px'
 		},
 		common:{
 			margin:'0 auto'
@@ -39,7 +41,12 @@ export default {
 	},
 	finalText:{
 		textAlign:'center',
-		fontSize:'10px',
+		fontSize:'12px',
 		color:'#DBDBDB'
+	},
+	whitelogo: {
+		display: 'block',
+		margin: '20px auto',
+		maxHeight: '80px'
 	}
 }

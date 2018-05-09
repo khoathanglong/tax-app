@@ -41,7 +41,7 @@ export default class UserProfile extends Component {
             <h4>Edit Profile</h4>
           </Col>
           <Col xs={4} style={style.h4ColInactive}>
-            <h4>Settings</h4>
+            <h4>Notification Settings</h4>
           </Col>
         </Row>
 
@@ -49,7 +49,7 @@ export default class UserProfile extends Component {
 
         <Row>
           <Col md={6}>
-            <p style={{textAlign: "center"}}>Your accumulated income compared to your income limit is now...</p>
+            <p style={{textAlign: "center", fontWeight: "bold"}}>Your accumulated income compared to your income limit is now...</p>
 
             <Chart
               chartType="PieChart"
@@ -63,7 +63,7 @@ export default class UserProfile extends Component {
           </Col>
 
           <Col md={6}>
-            <p style={{textAlign: "center"}}>Adjust the options below to see your income and tax summary:</p>
+            <p style={{textAlign: "center", fontWeight: "bold"}}>Adjust the options below to see your income and tax summary:</p>
 
             {(this.state.chartData === "both") &&
               <Chart
@@ -98,10 +98,10 @@ export default class UserProfile extends Component {
               />
             }
 
-            <Form inline style={{marginLeft: "5%"}}>
+            <Form inline>
               <FormGroup controlId="formControlsSelect" style={{margin: "10px 0"}}>
-                <ControlLabel>Data types:</ControlLabel>
-                <FormControl componentClass="select" style={{margin: "0 10px"}} id="data-type">
+                <ControlLabel style={{margin: "0 5px 0 20px"}}>Data types:</ControlLabel>
+                <FormControl componentClass="select" id="data-type">
                   <option value="both" selected="selected">Incomes and Taxes</option>
                   <option value="incomes">Incomes</option>
                   <option value="taxes">Taxes</option>
@@ -109,8 +109,8 @@ export default class UserProfile extends Component {
               </FormGroup>
 
               <FormGroup controlId="formControlsSelect" style={{margin: "10px 0"}}>
-                <ControlLabel>Time range:</ControlLabel>
-                <FormControl componentClass="select" onChange={this.changeTime} id="time" style={{margin: "0 10px"}}>
+                <ControlLabel style={{margin: "0 5px 0 20px"}}>Time range:</ControlLabel>
+                <FormControl componentClass="select" onChange={this.changeTime} id="time">
                   <option value="yearly" selected="selected">Yearly</option>
                   <option value="monthly">Monthly</option>
                 </FormControl>
@@ -118,10 +118,10 @@ export default class UserProfile extends Component {
             </Form>
 
             {(this.state.timeVal === "yearly") &&
-              <Form inline style={{marginLeft: "5%"}}>
+              <Form inline>
                 <FormGroup controlId="formControlsSelect" style={{margin: "10px 0"}}>
-                  <ControlLabel>From:</ControlLabel>
-                  <FormControl componentClass="select" id="from-year" style={{margin: "0 10px"}}>
+                  <ControlLabel style={{margin: "0 5px 0 20px"}}>From:</ControlLabel>
+                  <FormControl componentClass="select" id="from-year">
                     <option value="2015" selected="selected">2015</option>
                     <option value="2016">2016</option>
                     <option value="2017">2017</option>
@@ -130,8 +130,8 @@ export default class UserProfile extends Component {
                 </FormGroup>
 
                 <FormGroup controlId="formControlsSelect" style={{margin: "10px 0"}}>
-                  <ControlLabel>To:</ControlLabel>
-                  <FormControl componentClass="select" id="to-year" style={{margin: "0 10px"}}>
+                  <ControlLabel style={{margin: "0 5px 0 20px"}}>To:</ControlLabel>
+                  <FormControl componentClass="select" id="to-year">
                     <option value="2015">2015</option>
                     <option value="2016">2016</option>
                     <option value="2017" selected="selected">2017</option>
@@ -142,7 +142,7 @@ export default class UserProfile extends Component {
             }
 
             {(this.state.timeVal === "monthly") &&
-              <div style={{marginLeft: "5%"}}>
+              <div style={{marginLeft: "20px"}}>
                 <span style={{fontWeight: "bold"}}>From:</span>
                 <MuiThemeProvider>
                   <DatePicker hintText="Pick month & year" shouldDisableDate={this.disableDates} formatDate={this.formatDate} openToYearSelection={true} />
@@ -154,7 +154,7 @@ export default class UserProfile extends Component {
               </div>
             }
 
-            <button style={style.buttonStyle} onClick={this.drawChart}>Generate</button>
+            <Button bsStyle="" style={style.buttonStyle} onClick={this.drawChart}>Generate</Button>
 
           </Col>
         </Row>
