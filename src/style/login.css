@@ -1,0 +1,84 @@
+.{
+    height: 10%;
+    background: #FAFAFA;
+    padding: 2%;
+    margin: 5% 5%;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    border: 10px solid #305A72;
+    font: 12px 'Questrial', Arial, Helvetica, sans-serif;
+}
+h2, h4{
+  margin: 2% 0% 0% 5%;
+  font: 24px 'Questrial', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+form.container-split{
+    width: 45%;
+    margin: 5% 2% 0% 2%;
+}
+form.align-left{
+  padding: 5%;
+  border-right: solid 2px rgb(210, 188, 211);
+}
+
+.form-style ul{
+    padding:2%;
+    margin:1% 2%;
+    list-style:none;
+}
+.form-style ul li{
+    margin-bottom: 2%;
+    margin-top: 1%;
+    min-height: 45px;
+}
+.form-style ul li  .field-style{
+    box-sizing: border-box;
+    padding: 2.5%;
+    outline: none;
+    background-color: rgb(210, 188, 211, .4);
+    border: 1px solid rgb(210, 188, 211, .4);
+    border-radius: 20px;
+
+}.form-style ul li  .field-style:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+}
+.form-style ul li .field-split{
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+}
+.form-style ul li .field-full{
+    margin-bottom: 4%;
+    width: 88%;
+}
+.form-style ul li input.align-left{
+    float:left;
+}
+.form-style ul li input.align-right{
+    float:right;
+}
+.form-style ul li textarea{
+    width: 98%;
+    height: 100px;
+}
+.form-style ul li input[type="button"],
+.form-style ul li input[type="submit"] {
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #58bc82;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 1% 40%;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    text-decoration: none;
+    font: 18px 'Questrial', Arial, Helvetica, sans-serif;
+}
+.form-style ul li input[type="button"]:hover,
+.form-style ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #4e0250 100%);
+    background-color: #58bc82;
+}
