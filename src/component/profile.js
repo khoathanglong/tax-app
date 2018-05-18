@@ -41,7 +41,7 @@ export default class UserProfile extends Component {
             <h4>Edit Profile</h4>
           </Col>
           <Col xs={4} style={style.h4ColInactive}>
-            <h4>Notification Settings</h4>
+            <h4>Settings</h4>
           </Col>
         </Row>
 

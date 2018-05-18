@@ -20,7 +20,7 @@ export default class EditProfile extends Component {
             <h4>Edit Profile</h4>
           </Col>
           <Col sm={4} xs={10} xsOffset={1} smOffset={0} style={style.h4ColInactive}>
-            <h4>Notification Settings</h4>
+            <h4>Settings</h4>
           </Col>
         </Row>
 

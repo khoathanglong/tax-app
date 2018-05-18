@@ -1,0 +1,30 @@
+#toggleSwitch span {
+  display: inline-block;
+}
+
+#toggleSwitch {
+  height: 34px
+}
+
+#switch {
+  width: 80px;
+  height: 34px;
+  margin: 0;
+  background-color: #ccc;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.on ,.off {
+  display: block;
+  width: 32px;
+  height: 26px;
+  margin: 4px 0 0 4px;
+  background: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.on {
+  margin-left: 44px;
+}
