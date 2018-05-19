@@ -27,9 +27,8 @@ export default {
 			color:'#4E0250',
 			fontSize:'48px',
 			backgroundColor:'white',
-			display:'flex',
-			justifyContent:'right',
-			paddingRight: '40px'
+			paddingRight: '40px',
+			textAlign:'right'
 		}
 	}
 }

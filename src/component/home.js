@@ -10,7 +10,7 @@ import screen from '../image/home/screen.png'
 import stars from '../image/home/stars.png'
 import people from '../image/home/people.png'
 import save from '../image/home/save.png'
-
+import {Link} from 'react-router-dom'
 export default ()=>{
 	return (
 		<div>

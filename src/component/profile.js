@@ -4,6 +4,8 @@ import { Chart } from 'react-google-charts';
 import style from '../style/profile.js';
 import DatePicker from 'material-ui/DatePicker';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {Link} from 'react-router-dom'
+import '../style/settings.css';
 
 export default class UserProfile extends Component {
   constructor(props) {
@@ -35,18 +37,22 @@ export default class UserProfile extends Component {
       <Grid fluid>
         <Row>
           <Col xs={4} style={style.h4ColActive}>
-            <h4>My Profile</h4>
+            <Link to='/profile' style={{color:'inherit'}}>
+              <h4>My Profile</h4>
+            </Link>
           </Col>
           <Col xs={4} style={style.h4ColInactive}>
-            <h4>Edit Profile</h4>
+            <Link to='/editprofile' style={{color:'inherit'}}>
+              <h4>Edit Profile</h4>
+            </Link>
           </Col>
           <Col xs={4} style={style.h4ColInactive}>
-            <h4>Settings</h4>
+            <Link to='/settings' style={{color:'inherit'}}>
+              <h4>Settings</h4>
+            </Link>
           </Col>
         </Row>
-
         <h3 style={{textAlign: "center", margin: "40px"}}>Hello, User!</h3>
-
         <Row>
           <Col md={6}>
             <p style={{textAlign: "center", fontWeight: "bold"}}>Your accumulated income compared to your income limit is now...</p>

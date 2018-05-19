@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import '../style/login.css';
-
+import {Link} from 'react-router-dom'
 export default class Login extends Component {
 
   render() {
@@ -38,7 +38,9 @@ export default class Login extends Component {
                   <input type="password" name="password" class="field-style field-full" placeholder="Password" />
                 </li>
                 <li>
-                  <input type="submit" value="Log in" />
+                  <Link to='/profile'>
+                    <input type="submit" value="Log in" />
+                  </Link>
                 </li>
                 </ul>
               </form>  
