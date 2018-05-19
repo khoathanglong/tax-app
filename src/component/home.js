@@ -15,7 +15,11 @@ export default ()=>{
 	return (
 		<div>
 			<div style={style.cover.common}>
-				<Button style={style.cover.button} bsStyle="success">TRACK YOUR TAX FOR FREE</Button>
+				<Link to="/editprofile">
+					<Button style={style.cover.button} bsStyle="success">
+						TRACK YOUR TAX FOR FREE
+					</Button>
+				</Link>
 			</div>
 			<Row style={style.about.common}>
 				<Col  xsHidden sm={3} xsOffset={1}>
@@ -62,7 +66,9 @@ export default ()=>{
 					</Col>
 					<Col xsOffset={3} xs={6} sm={4} smOffset={0}>
 						<h3>Track your tax responsibly from any device!</h3>
-						<Button bsStyle="success">Start now</Button>
+						<Link to="editprofile">
+							<Button bsStyle="success">Start now</Button>
+						</Link>
 					</Col>
 				</Row>
 			</div>

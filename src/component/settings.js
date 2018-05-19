@@ -50,30 +50,79 @@ export default class Settings extends Component {
         <Row>
           <Col xs={1} />
           <Col xs={10}>
-            <Form inline >
-              <FormGroup controlId="formInlineEmail" >
-                <ControlLabel style={{paddingRight:'40px'}}>E-mail</ControlLabel>{' '}
-                <FormControl type="email" defaultValue="user@gmail.com" />
-              </FormGroup>{' '}
-              <Button>Update</Button>
+            <Form horizontal >
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel}>
+                  Email
+                </Col>
+                <Col sm={8}>
+                  <FormControl type="email" defaultValue="user@gmail.com" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel}>
+                  Mobile
+                </Col>
+                <Col sm={8}>
+                  <FormControl type="phone" defaultValue="04567892" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel}>
+                  Address
+                </Col>
+                <Col sm={8}>
+                  <FormControl type="text" defaultValue="Tooloo" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel}>
+                  Postal Code
+                </Col>
+                <Col sm={8}>
+                  <FormControl type="number" defaultValue="01525" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel}>
+                  Current PassWord
+                </Col>
+                <Col sm={8}>
+                  <FormControl type="password" defaultValue="01sasd525" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel}>
+                  New PassWord
+                </Col>
+                <Col sm={8}>
+                  <FormControl type="password" placeholder="enter new password" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel}>
+                  Re-Enter PassWord
+                </Col>
+                <Col sm={8}>
+                  <FormControl type="password" placeholder="re-enter new password" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formInlineEmail" bsStyle="lg">
+                <Col sm={2} componentClass={ControlLabel} style={{paddingTop:'5px',verticalAlign:'middle'}}>
+                  Notifications
+                </Col>
+                <Col sm={8} id='toggleSwitch'>
+                  <span id='switch' onClick={this.toggleNotification}>
+                    <span id='slider' className={this.state.notifications}></span>
+                  </span>
+                </Col>
+              </FormGroup>
+              <FormGroup>
+                <Col sm={8} smOffset={2}>
+                  <Button bsStyle="success" bsSize="lg">Save</Button>
+                </Col>
+              </FormGroup>
             </Form>
-            <br/>
-            <Form inline>
-              <FormGroup controlId="formInlineEmail">
-                <ControlLabel style={{paddingRight:'40px'}}>Mobile</ControlLabel>{' '}
-                <FormControl type="phone" defaultValue="04567892" />
-              </FormGroup>{' '}
-              <Button>Update</Button>
-            </Form>
-            <br/>
-            <div id='toggleSwitch'>
-              <span style={{height: '34px', verticalAlign: 'middle',paddingRight:"5px",fontWeight:'bold'}}>
-                Notifications
-              </span>
-              <span id='switch' onClick={this.toggleNotification}>
-                <span id='slider' className={this.state.notifications}></span>
-              </span>
-            </div>
           </Col>
         </Row>
         <br/>
