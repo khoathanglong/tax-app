@@ -1,16 +1,15 @@
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 .{
-    height: 10%;
     background: #FAFAFA;
     padding: 2%;
     margin: 5% 5%;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 20px;
     border: 10px solid #305A72;
-    font: 12px 'Questrial', Arial, Helvetica, sans-serif;
+    font: 16px 'Questrial', Arial, Helvetica, sans-serif;
 }
 h2, h4{
   margin: 2% 0% 0% 5%;
-  font: 24px 'Questrial', Arial, Helvetica, sans-serif;
+  font: 1.5em 'Questrial', Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -50,9 +49,21 @@ form.align-left{
     margin-right: 2%;
     margin-bottom: 4%;
 }
+@media (max-width: 600px){
+  form.container-split{
+      width: 88%;
+      margin: 5% 2% 0% 2%;
+  }
+  .form-style ul li .field-split{
+      width: 88%;
+      margin-right: 2%;
+      margin-bottom: 2%;
+  }
+}
+
 .form-style ul li .field-full{
     margin-bottom: 4%;
-    width: 88%;
+    width: 98%;
 }
 .form-style ul li input.align-left{
     float:left;
@@ -60,13 +71,8 @@ form.align-left{
 .form-style ul li input.align-right{
     float:right;
 }
-.form-style ul li textarea{
-    width: 98%;
-    height: 100px;
-}
 .form-style ul li input[type="button"],
 .form-style ul li input[type="submit"] {
-    box-shadow: inset 0px 1px 0px 0px #3985B1;
     background-color: #58bc82;
     border: 1px solid;
     border-radius: 20px;
