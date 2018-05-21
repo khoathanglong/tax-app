@@ -13,14 +13,14 @@ export default class Login extends Component {
               <h2>Wanna be a User</h2>
               <ul>
               <li>
-                <input type="text" name="firstname" class="field-style field-split align-left" placeholder="First Name" />
-                <input type="text" name="lastname" class="field-style field-split align-left" placeholder="Last Name" />
+                <input type="text" name="firstname" class="field-style field-split align-left" placeholder="First Name" required/>
+                <input type="text" name="lastname" class="field-style field-split align-left" placeholder="Last Name" required/>
               </li>
               <li>
-                <input type="text" name="username" class="field-style field-split align-left" placeholder="Username" />
-                <input type="email" name="email" class="field-style field-split align-none" placeholder="Email" />
-                <input type="password" name="password" class="field-style field-split align-left" placeholder="Password" />
-                <input type="password" name="confirm" class="field-style field-split align-left" placeholder="Confirm Password" />
+                <input type="text" name="username" class="field-style field-split align-left" placeholder="Username" required/>
+                <input type="email" name="email" class="field-style field-split align-none" placeholder="Email" required/>
+                <input type="password" name="password" class="field-style field-split align-left" placeholder="Password" required/>
+                <input type="password" name="confirm" class="field-style field-split align-left" placeholder="Confirm Password" required/>
               </li>
               <li>
                 <input type="submit" value="Sign Up" />
@@ -34,8 +34,8 @@ export default class Login extends Component {
               <h2>Already a User</h2>
               <ul>
                 <li>
-                  <input type="text" name="username" class="field-style field-full" placeholder="Username" />
-                  <input type="password" name="password" class="field-style field-full" placeholder="Password" />
+                  <input type="text" name="username" class="field-style field-full" placeholder="Username" required/>
+                  <input type="password" name="password" class="field-style field-full" placeholder="Password" required/>
                 </li>
                 <li>
                   <Link to='/profile'>

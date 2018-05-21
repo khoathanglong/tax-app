@@ -11,19 +11,19 @@ export default class Contact extends Component {
       <form class="form-style">
         <ul>
           <li>
-            <input type="text" name="name" class="field-style field-split align-left" placeholder="Name" />
+            <input type="text" name="name" class="field-style field-split align-left" placeholder="Name" required/>
             <input type="text" name="phone" class="field-style field-split align-left" placeholder="Phone" />
 
           </li>
           <li>
-            <input type="email" name="email" class="field-style field-full align-none" placeholder="Email" />
+            <input type="email" name="email" class="field-style field-full align-none" placeholder="Email" required/>
 
           </li>
           <li>
-            <input type="text" name="subject" class="field-style field-full align-none" placeholder="Subject" />
+            <input type="text" name="subject" class="field-style field-full align-none" placeholder="Subject" required />
           </li>
           <li>
-            <textarea name="message" class="field-style" placeholder="Message"></textarea>
+            <textarea name="message" class="field-style" placeholder="Message" required></textarea>
           </li>
           <li>
             <input type="submit" value="Send Message" />
