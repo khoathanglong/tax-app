@@ -15,10 +15,10 @@ h2, h4{
 
 form.container-split{
     width: 45%;
-    margin: 5% 2% 0% 2%;
+    margin: 3% 2% 0% 2%;
 }
 form.align-left{
-  padding: 5%;
+  padding: 3%;
   border-right: solid 2px rgb(210, 188, 211);
 }
 
@@ -47,20 +47,23 @@ form.align-left{
 .form-style ul li .field-split{
     width: 48%;
     margin-right: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 @media (max-width: 700px){
   form.container-split{
-      width: 88%;
-      margin: 5% 2% 0% 2%;
+      width: 98%;
   }
-  .form-style ul li .field-split{
-      width: 88%;
+  form.form-style ul li .field-split{
+      width: 98%;
       margin-right: 2%;
-      margin-bottom: 2%;
+      margin-bottom: 4%;
   }
-  form.align-left{
+  form.align-left {
     padding: 5%;
+  }
+  .form-style ul li input[type="button"],
+  .form-style ul li input[type="submit"] {
+    margin: 1% 25%;
   }
 }
 
