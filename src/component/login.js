@@ -23,7 +23,9 @@ export default class Login extends Component {
                 <input type="password" name="confirm" class="field-style field-split align-left" placeholder="Confirm Password" required/>
               </li>
               <li>
-                <input type="submit" value="Sign Up" />
+                <Link to="profile">
+                  <input type="submit" value="Sign Up" />                
+                </Link>
               </li>
             </ul>
           </form>
@@ -38,7 +40,7 @@ export default class Login extends Component {
                   <input type="password" name="password" class="field-style field-full" placeholder="Password" required/>
                 </li>
                 <li>
-                  <Link to='/profile'>
+                  <Link to='/profile'> {/*this Link is temporary, will be removed after integrating backend sigup*/}
                     <input type="submit" value="Log in" />
                   </Link>
                 </li>
