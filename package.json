@@ -4,6 +4,7 @@
   "homepage": "https://khoathanglong.github.io/tax-app",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "material-ui": "^0.20.0",
     "npm": "^5.8.0",
     "react": "^16.3.1",
