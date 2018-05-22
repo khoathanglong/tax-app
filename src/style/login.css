@@ -60,6 +60,7 @@ form.align-left{
   }
   form.align-left {
     padding: 5%;
+    border-right: none;
   }
   .form-style ul li input[type="button"],
   .form-style ul li input[type="submit"] {
