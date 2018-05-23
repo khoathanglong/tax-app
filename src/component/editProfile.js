@@ -35,10 +35,7 @@ export default class EditProfile extends Component {
           <Col xs={10}>
             <Tabs defaultActiveKey={1} id="edit-profile-tabs" style={style.allTabs}>
               <Tab eventKey={1} title="Basic Info">
-                <Button bsStyle='' style={style.saveBtn}>
-                  <i class="fas fa-save"></i> Save
-                </Button>
-
+              <Jumbotron>
                 <Form inline style={style.form}>
                   <FormGroup controlId="formInlineName">
                     <ControlLabel>Name</ControlLabel>{' '}
@@ -76,39 +73,6 @@ export default class EditProfile extends Component {
 
                   <Button><i class="fas fa-plus"></i> Add</Button>
                 </Form>
-
-                <Jumbotron>
-                  <Table striped bordered condensed hover responsive>
-                    <thead>
-                      <tr>
-                        <th>Marital Status</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Edit/Remove</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Single</td>
-                        <td>01/01/1985</td>
-                        <td>present</td>
-                        <td>
-                          <ButtonGroup>
-                            <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
-                            <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
-                          </ButtonGroup>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Jumbotron>
-              </Tab>
-
-              <Tab eventKey={2} title="City">
-                <Button bsStyle='' style={style.saveBtn}>
-                  <i class="fas fa-save"></i> Save
-                </Button>
-
                 <Form inline style={style.form}>
                   <FormGroup controlId="formInlineCity">
                     <ControlLabel>City:</ControlLabel>{' '}
@@ -121,55 +85,13 @@ export default class EditProfile extends Component {
                     </FormControl>{' '}
 
                     <FormGroup controlId="formInlineCityFrom">
-                      <ControlLabel>From</ControlLabel>{' '}
+                      <ControlLabel>Date Registered</ControlLabel>{' '}
                       <FormControl type="date" />
                     </FormGroup>{' '}
-
-                    <FormGroup controlId="formInlineCityTo">
-                      <ControlLabel>To</ControlLabel>{' '}
-                      <FormControl type="date" />
-                    </FormGroup>{' '}
-
-                    <Checkbox readOnly>
-                      {' '}To present
-                    </Checkbox>{' '}
 
                     <Button><i class="fas fa-plus"></i> Add</Button>
                   </FormGroup>
                 </Form>
-
-                <Jumbotron>
-                  <Table striped bordered condensed hover responsive>
-                    <thead>
-                      <tr>
-                        <th>City</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Edit/Remove</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Helsinki</td>
-                        <td>01/01/1985</td>
-                        <td>present</td>
-                        <td>
-                          <ButtonGroup>
-                            <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
-                            <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
-                          </ButtonGroup>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Jumbotron>
-              </Tab>
-
-              <Tab eventKey={3} title="Church Adherence">
-                <Button bsStyle='' style={style.saveBtn}>
-                  <i class="fas fa-save"></i> Save
-                </Button>
-
                 <Form inline style={style.form}>
                   <FormGroup controlId="formInlineChurch">
                     <ControlLabel>Church Adherence:</ControlLabel>{' '}
@@ -182,55 +104,13 @@ export default class EditProfile extends Component {
                     </FormControl>{' '}
 
                     <FormGroup controlId="formInlineChurchFrom">
-                      <ControlLabel>From</ControlLabel>{' '}
+                      <ControlLabel>Date Registered</ControlLabel>{' '}
                       <FormControl type="date" />
                     </FormGroup>{' '}
-
-                    <FormGroup controlId="formInlineChurchTo">
-                      <ControlLabel>To</ControlLabel>{' '}
-                      <FormControl type="date" />
-                    </FormGroup>{' '}
-
-                    <Checkbox readOnly>
-                      {' '}To present
-                    </Checkbox>{' '}
 
                     <Button><i class="fas fa-plus"></i> Add</Button>
                   </FormGroup>
                 </Form>
-
-                <Jumbotron>
-                  <Table striped bordered condensed hover responsive>
-                    <thead>
-                      <tr>
-                        <th>Church Adherence</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Edit/Remove</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>not a taxpayer for Church tax</td>
-                        <td>01/01/1985</td>
-                        <td>present</td>
-                        <td>
-                          <ButtonGroup>
-                            <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
-                            <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
-                          </ButtonGroup>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Jumbotron>
-              </Tab>
-
-              <Tab eventKey={4} title='Disability Percentage'>
-                <Button bsStyle='' style={style.saveBtn}>
-                  <i class="fas fa-save"></i> Save
-                </Button>
-
                 <Form inline style={style.form}>
                   <FormGroup controlId="formInlineDisability">
                     <ControlLabel>Disability Percentage</ControlLabel>{' '}
@@ -250,42 +130,17 @@ export default class EditProfile extends Component {
                   <Checkbox readOnly>
                     {' '}To present
                   </Checkbox>{' '}
-
                   <Button><i class="fas fa-plus"></i> Add</Button>
                 </Form>
-
-                <Jumbotron>
-                  <Table striped bordered condensed hover responsive>
-                    <thead>
-                      <tr>
-                        <th>Disability Percentage</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Edit/Remove</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>0%</td>
-                        <td>01/01/1985</td>
-                        <td>present</td>
-                        <td>
-                          <ButtonGroup>
-                            <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
-                            <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
-                          </ButtonGroup>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Jumbotron>
-              </Tab>
-
-              <Tab eventKey={5} title='Income'>
                 <Button bsStyle='' style={style.saveBtn}>
                   <i class="fas fa-save"></i> Save
                 </Button>
+                </Jumbotron>
+              </Tab>
 
+              <Tab eventKey={2} title='Income'>
+              <div>
+                <Jumbotron>
                 <Form inline style={style.form}>
                   <FormGroup controlId="formInlineJob">
                     <ControlLabel>Job Title</ControlLabel>{' '}
@@ -308,8 +163,6 @@ export default class EditProfile extends Component {
 
                   <Button><i class="fas fa-plus"></i> Add</Button>
                 </Form>
-
-                <Jumbotron>
                   <Tabs defaultActiveKey={1} id="edit-income-tabs">
                     <Tab eventKey={1} title='Job 1'>
                       <Form inline style={style.incomeForm}>
@@ -317,7 +170,7 @@ export default class EditProfile extends Component {
                             <ControlLabel>Monthly Income</ControlLabel>{' '}
                             <InputGroup>
                               <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
-                              <FormControl type="number" min='0' defaultValue='3000'/>
+                              <FormControl type="number" min='0' defaultValue='2300'/>
                             </InputGroup>
                         </FormGroup>{' '}
 
@@ -341,7 +194,7 @@ export default class EditProfile extends Component {
                           <tbody>
                             <tr>
                               <td>April</td>
-                              <td>3000</td>
+                              <td>2300</td>
                               <td>
                                 <ButtonGroup>
                                   <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
@@ -351,7 +204,7 @@ export default class EditProfile extends Component {
                             </tr>
                             <tr>
                               <td>March</td>
-                              <td>3000</td>
+                              <td>2000</td>
                               <td>
                                 <ButtonGroup>
                                   <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
@@ -361,7 +214,7 @@ export default class EditProfile extends Component {
                             </tr>
                             <tr>
                               <td>February</td>
-                              <td>3000</td>
+                              <td>2000</td>
                               <td>
                                 <ButtonGroup>
                                   <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
@@ -371,7 +224,213 @@ export default class EditProfile extends Component {
                             </tr>
                             <tr>
                               <td>January</td>
-                              <td>3000</td>
+                              <td>2000</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </div>
+                      </Tab>
+                      <Tab eventKey={2} title='Job 2'>
+                        <Form inline style={style.incomeForm}>
+                          <FormGroup controlId="formInlineMontlyIncome">
+                              <ControlLabel>Monthly Income</ControlLabel>{' '}
+                              <InputGroup>
+                                <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                                <FormControl type="number" min='0' defaultValue='300'/>
+                              </InputGroup>
+                          </FormGroup>{' '}
+
+                          <FormGroup controlId="formInlineIncomeLimit">
+                              <ControlLabel>Income Limit</ControlLabel>{' '}
+                              <InputGroup>
+                                <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                                <FormControl type='number' min='0' defaultValue='36000'/>
+                              </InputGroup>
+                          </FormGroup>
+                        </Form>
+
+                        <div id='incomeTable' style={{marginTop: '20px'}}>
+                          <h4>Year: 2018</h4>
+                          <Table responsive striped bordered condensed hover>
+                            <thead>
+                              <th>Month</th>
+                              <th>Income</th>
+                              <th>Edit/Remove</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>April</td>
+                                <td>300</td>
+                                <td>
+                                  <ButtonGroup>
+                                    <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                    <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                  </ButtonGroup>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>March</td>
+                                <td>300</td>
+                                <td>
+                                  <ButtonGroup>
+                                    <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                    <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                  </ButtonGroup>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>February</td>
+                                <td>300</td>
+                                <td>
+                                  <ButtonGroup>
+                                    <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                    <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                  </ButtonGroup>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>January</td>
+                                <td>300</td>
+                                <td>
+                                  <ButtonGroup>
+                                    <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                    <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                  </ButtonGroup>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </div>
+                        </Tab>
+                        <Tab eventKey={3} title='Other Income'>
+                          <Form inline style={style.incomeForm}>
+                            <FormGroup controlId="formInlineOtherIncome">
+                                <ControlLabel>Capital Gains</ControlLabel>{' '}
+                                <InputGroup>
+                                  <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                                  <FormControl type="number" min='0' defaultValue='0'/>
+                                </InputGroup>
+                            </FormGroup>{' '}
+
+                            <FormGroup controlId="¨formInlineOtherIncome">
+                                <ControlLabel>Dividends</ControlLabel>{' '}
+                                <InputGroup>
+                                  <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                                  <FormControl type='number' min='0' defaultValue='3600'/>
+                                </InputGroup>
+                            </FormGroup>
+                          </Form>
+                          <div id='otherIncomeTable' style={{marginTop: '20px'}}>
+                            <h4>Other Incomes Year: 2018</h4>
+                            <Table responsive striped bordered condensed hover>
+                              <thead>
+                                <th>Income</th>
+                                <th>Amount</th>
+                                <th>Edit/Remove</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Capital Gains</td>
+                                  <td>0</td>
+                                  <td>
+                                    <ButtonGroup>
+                                      <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                      <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                    </ButtonGroup>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Dividends</td>
+                                  <td>300</td>
+                                  <td>
+                                    <ButtonGroup>
+                                      <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                      <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                    </ButtonGroup>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </Table>
+                          </div>
+                        </Tab>
+                  </Tabs>
+                  <Button bsStyle='' style={style.saveBtn}>
+                    <i class="fas fa-save"></i> Save
+                  </Button>
+                </Jumbotron>
+                </div>
+              </Tab>
+
+              <Tab eventKey={3} title='Benefits'>
+              <Jumbotron>
+              <Tabs defaultActiveKey={1} id="edit-Benefits-tabs">
+                    <Tab eventKey={1} title='Study Grant'>
+                      <Form inline style={style.incomeForm}>
+                        <FormGroup controlId="formInlineMonthlyBenefits">
+                            <ControlLabel>Study Grant</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type="number" min='0' defaultValue='300'/>
+                            </InputGroup>
+                        </FormGroup>{' '}
+
+                        <FormGroup controlId="formInlineIncomeLimit">
+                            <ControlLabel>Income Limit</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type='number' min='0' defaultValue='3600'/>
+                            </InputGroup>
+                        </FormGroup>
+                      </Form>
+
+                      <div id='benefitTable' style={{marginTop: '20px'}}>
+                        <h4>Year: 2018</h4>
+                        <Table responsive striped bordered condensed hover>
+                          <thead>
+                            <th>Month</th>
+                            <th>Income</th>
+                            <th>Edit/Remove</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>April</td>
+                              <td>300</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>March</td>
+                              <td>300</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>February</td>
+                              <td>300</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>January</td>
+                              <td>300</td>
                               <td>
                                 <ButtonGroup>
                                   <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
@@ -383,9 +442,423 @@ export default class EditProfile extends Component {
                         </Table>
                       </div>
                     </Tab>
-                  </Tabs>
-                </Jumbotron>
-              </Tab>
+
+                    <Tab eventKey={2} title='Unemployment Income'>
+                      <Form inline style={style.incomeForm}>
+                        <FormGroup controlId="formInlineMonthlyBenefits">
+                            <ControlLabel>Other Income</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type="number" min='0' defaultValue='0'/>
+                            </InputGroup>
+                        </FormGroup>{' '}
+
+                        <FormGroup controlId="formInlineIncomeLimit">
+                            <ControlLabel>Income Limit</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type='number' min='0' defaultValue='3600'/>
+                            </InputGroup>
+                        </FormGroup>
+                      </Form>
+                      <div id='incomeTable' style={{marginTop: '20px'}}>
+                        <h4> Unemployment Income Year: 2018</h4>
+                        <Table responsive striped bordered condensed hover>
+                          <thead>
+                            <th>Month</th>
+                            <th>Amount</th>
+                            <th>Edit/Remove</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>May</td>
+                              <td>700</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </div>
+                    </Tab>
+                    </Tabs>
+                    <Button bsStyle='' style={style.saveBtn}>
+                      <i class="fas fa-save"></i> Save
+                    </Button>
+                    </Jumbotron>
+                    </Tab>
+
+                    <Tab eventKey={5} title='Deductions'>
+                      <Jumbotron>
+                      <Form inline style={style.incomeForm}>
+                        <FormGroup controlId="formInlineDeductions">
+                            <ControlLabel>Home loan interest</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type="number" min='0' defaultValue='0'/>
+                            </InputGroup>
+                        </FormGroup>{' '}
+
+                        <FormGroup controlId="formInlineMontlyIncome">
+                            <ControlLabel>Work loan interest</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type="number" min='0' defaultValue='0'/>
+                            </InputGroup>
+                        </FormGroup>{' '}
+
+                        <FormGroup controlId="formInlineMontlyIncome">
+                            <ControlLabel>Travel Expenses</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type="number" min='0' defaultValue='0'/>
+                            </InputGroup>
+                        </FormGroup>{' '}
+
+                        <FormGroup controlId="formInlineDeductions">
+                            <ControlLabel>Pension Contributions</ControlLabel>{' '}
+                            <InputGroup>
+                              <InputGroup.Addon><i class="fas fa-euro-sign"></i></InputGroup.Addon>
+                              <FormControl type='number' min='0' defaultValue='3600'/>
+                            </InputGroup>
+                        </FormGroup>
+                      </Form>
+                      <Button bsStyle='' style={style.saveBtn}>
+                        <i class="fas fa-save"></i> Save
+                      </Button>
+                      </Jumbotron>
+                    </Tab>
+
+                    <Tab eventKey={6} title='Summary'>
+                    <Jumbotron>
+                    <Table striped bordered condensed hover responsive>
+                    <thead>
+                      <tr>
+                        <th>Marital Status</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Edit/Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Single</td>
+                        <td>01/01/1985</td>
+                        <td>present</td>
+                        <td>
+                          <ButtonGroup>
+                            <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                            <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                          </ButtonGroup>
+                        </td>
+                      </tr>
+                    </tbody>
+                      <thead>
+                        <tr>
+                          <th>City</th>
+                          <th>Date Registered</th>
+                          <th>To</th>
+                          <th>Edit/Remove</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Helsinki</td>
+                          <td>01/01/1985</td>
+                          <td>present</td>
+                          <td>
+                            <ButtonGroup>
+                              <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                              <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                            </ButtonGroup>
+                          </td>
+                        </tr>
+                      </tbody>
+                        <thead>
+                          <tr>
+                            <th>Church Adherence</th>
+                            <th>Date Registered</th>
+                            <th>To</th>
+                            <th>Edit/Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>not a taxpayer for Church tax</td>
+                            <td>01/01/1985</td>
+                            <td>present</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                        </tbody>
+
+                        <thead>
+                          <tr>
+                            <th>Disability Percentage</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Edit/Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>0%</td>
+                            <td>01/01/1985</td>
+                            <td>present</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </Table>
+
+                    <div id='incomeTable' style={{marginTop: '20px'}}>
+                      <h4>Earned Income Year: 2018</h4>
+                      <Table responsive striped bordered condensed hover>
+                        <thead>
+                          <th>Month</th>
+                          <th>Job 1</th>
+                          <th>Job 2</th>
+                          <th>Capital Gains</th>
+                          <th>Dividends</th>
+                          <th>Total Income</th>
+                          <th>Edit/Remove</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>April</td>
+                            <td>2000</td>
+                            <td>300</td>
+                            <td>0</td>
+                            <td>300</td>
+                            <td>2600</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>March</td>
+                            <td>2000</td>
+                            <td>300</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2300</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>February</td>
+                            <td>2000</td>
+                            <td>300</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2300</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>January</td>
+                            <td>2000</td>
+                            <td>300</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2300</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                    </div>
+
+                    <div id='incomeTable' style={{marginTop: '20px'}}>
+                      <h4> Benefits Year: 2018</h4>
+                      <Table responsive striped bordered condensed hover>
+                        <thead>
+                          <th>Month</th>
+                          <th>Student Grant</th>
+                          <th>Unemployment Benefit</th>
+                          <th>Total</th>
+                          <th>Edit/Remove</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>May</td>
+                            <th>250</th>
+                            <th>0</th>
+                            <td>250</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>April</td>
+                            <th>250</th>
+                            <th>0</th>
+                            <td>250</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>March</td>
+                            <th>250</th>
+                            <th>0</th>
+                            <td>250</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>February</td>
+                            <th>250</th>
+                            <th>0</th>
+                            <td>250</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>January</td>
+                            <th>250</th>
+                            <th>0</th>
+                            <td>250</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                    </div>
+                      <div id='otherIncomeTable' style={{marginTop: '20px'}}>
+                        <h4>Other Incomes Year: 2018</h4>
+                        <Table responsive striped bordered condensed hover>
+                          <thead>
+                            <th>Income</th>
+                            <th>Amount</th>
+                            <th>Edit/Remove</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Capital Gains</td>
+                              <td>0</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Dividends</td>
+                              <td>300</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </div>
+
+                      <div id='incomeTable' style={{marginTop: '20px'}}>
+                        <h4>Deductions Year: 2018</h4>
+                        <Table responsive striped bordered condensed hover>
+                          <thead>
+                            <th>Income</th>
+                            <th>Amount</th>
+                            <th>Edit/Remove</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>House Loan interest</td>
+                              <td>800</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Work Loan Interest</td>
+                              <td>700</td>
+                              <td>
+                                <ButtonGroup>
+                                  <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                  <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                                </ButtonGroup>
+                              </td>
+                            </tr>
+                            <tr>
+                            <td>Travel Expenses</td>
+                            <td>800</td>
+                            <td>
+                              <ButtonGroup>
+                                <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                                <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                              </ButtonGroup>
+                            </td>
+                          </tr>
+                          <tr>
+                          <td>Pension Contribution</td>
+                          <td>2300</td>
+                          <td>
+                            <ButtonGroup>
+                              <Button bsStyle='info'><i class="fas fa-edit"></i></Button>{' '}
+                              <Button bsStyle='danger'><i class="fas fa-trash-alt"></i></Button>
+                            </ButtonGroup>
+                          </td>
+                        </tr>
+                          </tbody>
+                        </Table>
+                      </div>
+                      <Button bsStyle='' style={style.saveBtn}>
+                        <i class="fas fa-save"></i> Save
+                      </Button>
+                      </Jumbotron>
+                    </Tab>
             </Tabs>
           </Col>
         </Row>
