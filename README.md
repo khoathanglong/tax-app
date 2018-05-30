@@ -1,4 +1,4 @@
-# tax-app
+# tax-app (prototype)
 
 Before npm start:
 
