@@ -3,7 +3,9 @@ export default {
 		background: '-webkit-linear-gradient(#4E0250 0%, #645986 71.5%, #58BC82 100% )',
 		color:'white',
 		margin:'0',
-		borderRadius:'0px'
+		borderRadius:'0px',
+		width: '100%',
+		marginTop:'100px'
 	},
 	media:{
 		text:{

@@ -13,7 +13,7 @@ import Login from './component/login.js';
 
 
 class App extends Component {
-  render() {
+	render() {
     return (
       <Grid className="App" style={{fontFamily:'Questrial'}} fluid >
         <Header/>
@@ -27,7 +27,7 @@ class App extends Component {
         		<Route exact path='/editprofile' component={EditProfile} />
         		<Route path='/:params' component={HomePage} />{/* other paths*/}
         	</Switch>
-        <Footer/>
+        <Footer />
       </Grid>
     );
   }

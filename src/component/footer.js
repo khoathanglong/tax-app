@@ -4,6 +4,9 @@ import style from '../style/footer.js';
 import whitelogo from "../image/whitelogo.png";
 
 export default ()=>{
+	if (window.location.pathname.match('login')){
+		return null;
+	  }
 	return (
 		<Navbar style={style.footerCommon} fluid>
 
